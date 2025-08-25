@@ -75,7 +75,7 @@ export default function AboutUs(){
           <h2 className="mb-3 text-primary">About Our Company</h2>
           <h4 className="mb-4">Noida’s Most Trusted Sofa Repair Experts</h4>
           <p>
-            With years of experience in sofa repair and reupholstery, we have become the go-to choice for countless homes and businesses across Noida. Our team of skilled craftsmen ensures that every repair is done with precision, care, and a focus on customer satisfaction.
+            15 years of experience in sofa repair and reupholstery, we have become the go-to choice for countless homes and businesses across Noida. Our team of skilled craftsmen ensures that every repair is done with precision, care, and a focus on customer satisfaction.
           </p>
           <p>
             We specialize in all types of sofa repair including fabric replacement, spring repair, frame reinforcement, and more. Whether it’s restoring your old sofa to its former glory or giving it a brand-new look, we've got you covered.
