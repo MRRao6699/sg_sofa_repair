@@ -1,5 +1,5 @@
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import Home from './home/Home';
 import AboutUs from './aboutUs/AboutUs';
 import SofaRepair from './services/SofaRepair';
@@ -13,7 +13,7 @@ export default function App() {
   return (
 
      <>
-     <BrowserRouter>
+ <HashRouter>
      <Routes>
       <Route path='/' element={<Home/>}></Route>
       <Route path='/about' element={<AboutUs/>}></Route>
@@ -26,7 +26,7 @@ export default function App() {
 
 
      </Routes>
-     </BrowserRouter>
+</HashRouter>
      </>
 
   )
