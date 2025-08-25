@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/sg_sofa_repair/static/css/main.e8fbf2c2.css",
+    "main.js": "/sg_sofa_repair/static/js/main.7062a6c2.js",
+    "static/js/453.d8b96ef7.chunk.js": "/sg_sofa_repair/static/js/453.d8b96ef7.chunk.js",
+    "static/media/img1.jpg": "/sg_sofa_repair/static/media/img1.89900aa2dcbd85823f82.jpg",
+    "index.html": "/sg_sofa_repair/index.html",
+    "main.e8fbf2c2.css.map": "/sg_sofa_repair/static/css/main.e8fbf2c2.css.map",
+    "main.7062a6c2.js.map": "/sg_sofa_repair/static/js/main.7062a6c2.js.map",
+    "453.d8b96ef7.chunk.js.map": "/sg_sofa_repair/static/js/453.d8b96ef7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e8fbf2c2.css",
+    "static/js/main.7062a6c2.js"
+  ]
+}
