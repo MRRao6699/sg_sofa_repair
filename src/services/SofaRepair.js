@@ -25,10 +25,10 @@ export default function SofaRepair(){
         {/* Image */}
         <div className="col-md-6 text-center">
           <img 
-            src="/img/sofa_2.jpg" 
+            src={`${process.env.PUBLIC_URL}/img/sofa_2.jpg`} 
             alt="Sofa Repair" 
             className="img-fluid rounded" 
-            style={{ maxHeight: '300px', objectFit: 'cover' }}
+            style={{ maxHeight: '400px', objectFit: 'cover' }}
           />
         </div>
       </div>

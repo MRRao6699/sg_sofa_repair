@@ -11,7 +11,7 @@ const Carousel_2 = () => {
       <Carousel.Item>
         <img
           className="d-block w-100 carousel-image"
-          src="/public/img/slider2.jpg"
+          src={`${process.env.PUBLIC_URL}/img/slider2.jpg`}
           alt="Slide 1"
         />
         <div className="custom-caption ">
@@ -23,7 +23,7 @@ const Carousel_2 = () => {
       <Carousel.Item>
         <img
           className="d-block w-100 carousel-image"
-          src="/public/img/slider4.jpg"
+          src={`${process.env.PUBLIC_URL}/img/slider4.jpg`}
           alt="Slide 2"
         />
         <div className="custom-caption fw-bold ">

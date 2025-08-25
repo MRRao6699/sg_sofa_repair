@@ -66,7 +66,7 @@ export default function AboutUs(){
       <div className="row align-items-center">
         <div className="col-md-6 mb-4 mb-md-0">
           <img 
-            src="/img/sofa_1.jpeg" 
+            src=  {`${process.env.PUBLIC_URL}/img/sofa_1.jpeg`} 
             alt="Sofa Repair" 
             className="img-fluid rounded shadow"
           />

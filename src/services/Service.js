@@ -5,12 +5,12 @@ export default function Service(){
     const WHATSAPP = "917351139800";
     
   const services = [
-    { title: "Sofa Repair", desc: "Structural fixes, broken legs, frame & spring repairs.", src: "/img/reclining_sofa.jpg", alt:'recling_sofa'},
-    { title: "Re‑Upholstery", desc: "Fabric/leatherette change with neat stitching & piping.", src: "🧵" },
-    { title: "Foam/Cushion Replacement", desc: "High‑density foam, sagging seat makeover, custom sizes.", src: "🧽" },
-    { title: "Recliner Repair", desc: "Handle, cable, motor, & mechanism service.", src: "🛋️" },
-    { title: "Polish & Restoration", desc: "Wood touch‑ups, color matching, shine restoration.", src: "✨" },
-    { title: "New Custom Sofa", desc: "Tailor‑made designs for homes, offices & lounges.", src: "📐" },
+    { title: "Sofa Repair", desc: "Structural fixes, broken legs, frame & spring repairs.", src: `${process.env.PUBLIC_URL}/img/reclining_sofa.jpg`, alt:'recling_sofa'},
+    { title: "Re‑Upholstery", desc: "Fabric/leatherette change with neat stitching & piping.", src: `${process.env.PUBLIC_URL}/img/reclining_sofa.jpg` },
+    { title: "Foam/Cushion Replacement", desc: "High‑density foam, sagging seat makeover, custom sizes.", src: `${process.env.PUBLIC_URL}/img/reclining_sofa.jpg` },
+    { title: "Recliner Repair", desc: "Handle, cable, motor, & mechanism service.", src: `${process.env.PUBLIC_URL}/img/reclining_sofa.jpg` },
+    { title: "Polish & Restoration", desc: "Wood touch‑ups, color matching, shine restoration.", src: `${process.env.PUBLIC_URL}/img/reclining_sofa.jpg` },
+    { title: "New Custom Sofa", desc: "Tailor‑made designs for homes, offices & lounges.", src: `${process.env.PUBLIC_URL}/img/reclining_sofa.jpg` },
   ];
 
     
@@ -36,11 +36,13 @@ export default function Service(){
             {services.map((s) => (
               <div className="col-md-4" key={s.title}>
                 <div className="card h-100 shadow-sm">
+                <img src={s.src} alt={s.alt} style={{width:'100%',height:'250px',borderRadius:'10px'}} />
+
                   <div className="card-body text-center">
-                    <div className="display-5" ><img src={s.src} alt={s.alt} style={{width:'200px',height:'200px',borderRadius:'20px'}} /></div>
+
                     <h5 className="card-title mt-3">{s.title}</h5>
                     <p className="card-text">{s.desc}</p>
-                    <a href={`https://wa.me/${WHATSAPP}?text=I%20am%20interested%20in%20${encodeURIComponent(s.title)}`} target="_blank" rel="noreferrer" className="btn btn-link">Enquire now →</a>
+                    <a href={`https://wa.me/${WHATSAPP}?text=I%20am%20interested%20in%20${encodeURIComponent(s.title)}`} target="_blank" rel="noreferrer" className="btn btn-primary">Enquire now →</a>
                   </div>
                 </div>
               </div>

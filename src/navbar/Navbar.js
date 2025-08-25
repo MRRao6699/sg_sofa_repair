@@ -56,7 +56,7 @@ export default function Navbar() {
                     {/* 🪑 Logo */}
                     <a className="navbar-brand d-flex align-items-center" href="#">
                         <img
-                            src="logo_sofa.png" // <- make sure this is in public folder
+                            src= {`${process.env.PUBLIC_URL}/img/logo_sofa.png`} // <- make sure this is in public folder
                             alt="SG Sofa Center"
                             height="50"
                             className="me-2"
