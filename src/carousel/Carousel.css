@@ -24,8 +24,9 @@
 
 /* Optional: Add a text shadow for readability */
 .custom-caption h1 {
-  text-shadow: 2px 2px 8px rgba(205, 21, 21, 0.7);
-  font-family:fantasy
+  text-shadow: 5px 5px 8px rgba(21, 21, 205, 0.7);
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 3rem;
 }
 
 /* Hide default positioning */

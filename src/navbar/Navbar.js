@@ -61,14 +61,7 @@ export default function Navbar() {
                             height="50"
                             className="me-2"
                         />
-                        <div>
-                            <h5 className="mb-0 fw-bold">
-                                <span className="text-warning">SG</span> SOFA
-                            </h5>
-                            <h5 className="mb-0 fw-bold">
-                                <span className="text-warning">CENTER</span>
-                            </h5>
-                        </div>
+                        
                     </a>
 
                     {/* ☰ Toggler */}

@@ -12,6 +12,7 @@ import Footer from "../footer/Footer";
 import Carousel_1 from "../carousel/Carousel_1";
 import './Home.css'
 import { Link } from "react-router-dom";
+import Gallery from "../gallery/Gallery";
 
 
 export default function Home(){
@@ -170,6 +171,7 @@ Service Areas
         </div>
       </section>
 
+<Gallery/>
       {/* Testimonials */}
       <section className="py-5">
         <div className="container">

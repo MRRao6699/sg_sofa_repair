@@ -27,7 +27,7 @@ const Carousel_1 = () => {
           alt="Slide 2"
         />
         <div className="custom-caption fw-bold ">
-          <h1>Best <br /><span>SOFA REPAIR </span> <br /> Service</h1>
+          <h1>Best <br /><span>Sofa Repair </span> <br /> Service</h1>
           <Link className="btn btn-danger mt-3" to="/about">KNOW MORE</Link>
         </div>
       </Carousel.Item>

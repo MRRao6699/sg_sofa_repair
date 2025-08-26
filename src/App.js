@@ -7,6 +7,7 @@ import Recliner from './services/Recliner';
 import FabricChange from './services/FabricChange';
 import Contact from './contact/Contact';
 import Work from './works/Work';
+import ScrollToTop from './SrrollToTop';
 
 export default function App() {
 
@@ -14,6 +15,7 @@ export default function App() {
 
      <>
  <HashRouter>
+      <ScrollToTop /> {/* ✅ Self-closing */}
      <Routes>
       <Route path='/' element={<Home/>}></Route>
       <Route path='/about' element={<AboutUs/>}></Route>

@@ -1,0 +1,43 @@
+.footer {
+  background-color: #0f0c0c;
+}
+
+.newsletter-section {
+  background-color: #f73e05ac;
+}
+
+.newsletter-input input {
+  padding: 12px 20px;
+  width: 300px;
+  border: none;
+  border-radius: 50px;
+  margin-right: 10px;
+  outline: none;
+}
+
+.subscribe-btn {
+  padding: 12px 25px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 50px;
+}
+
+.footer-content h5,
+.footer-content h6 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-content ul li {
+  margin-bottom: 10px;
+  color: #f0f0f0;
+}
+
+.footer-content p {
+  color: #d1d1d1;
+}
+
+.footer-bottom {
+  background-color: #0a0a0a;
+}

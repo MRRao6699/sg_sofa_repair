@@ -1,16 +1,23 @@
 
+import './Service.css'
 
 export default function Service(){
   const PHONE = "+917351139800";
     const WHATSAPP = "917351139800";
     
   const services = [
-    { title: "Sofa Repair", desc: "Structural fixes, broken legs, frame & spring repairs.", src: `${process.env.PUBLIC_URL}/img/reclining_sofa.jpg`, alt:'recling_sofa'},
-    { title: "Re‑Upholstery", desc: "Fabric/leatherette change with neat stitching & piping.", src: `${process.env.PUBLIC_URL}/img/reclining_sofa.jpg` },
-    { title: "Foam/Cushion Replacement", desc: "High‑density foam, sagging seat makeover, custom sizes.", src: `${process.env.PUBLIC_URL}/img/reclining_sofa.jpg` },
-    { title: "Recliner Repair", desc: "Handle, cable, motor, & mechanism service.", src: `${process.env.PUBLIC_URL}/img/reclining_sofa.jpg` },
-    { title: "Polish & Restoration", desc: "Wood touch‑ups, color matching, shine restoration.", src: `${process.env.PUBLIC_URL}/img/reclining_sofa.jpg` },
-    { title: "New Custom Sofa", desc: "Tailor‑made designs for homes, offices & lounges.", src: `${process.env.PUBLIC_URL}/img/reclining_sofa.jpg` },
+    { title: "Sofa Repair", desc: "Structural fixes, broken legs, frame & spring repairs.", src: `${process.env.PUBLIC_URL}/img/Sofa-Repair_img.jpg`, alt:'recling_sofa'},
+    { title: "Re‑Upholstery", desc: "Fabric/leatherette change with neat stitching & piping.", src: `${process.env.PUBLIC_URL}/img/upholstery_img.jpg` },
+    { title: "Foam/Cushion Replacement", desc: "High‑density foam, sagging seat makeover, custom sizes.", src: `${process.env.PUBLIC_URL}/img/form_img.jpg` },
+    { title: "Recliner Repair", desc: "Handle, cable, motor, & mechanism service.", src: `${process.env.PUBLIC_URL}/img/recliner_img.jpg` },
+    { title: "Polish & Restoration", desc: "Wood touch‑ups, color matching, shine restoration.", src: `${process.env.PUBLIC_URL}/img/polish_img.jpg` },
+    { title: "New Custom Sofa", desc: "Tailor‑made designs for homes, offices & lounges.", src: `${process.env.PUBLIC_URL}/img/new_sofa.jpg` },
+    { title: "Sofa Cum Bed Repair", desc: "Tailor‑made designs for homes, offices & lounges.", src: `${process.env.PUBLIC_URL}/img/sofa_cum_bed.webp` },
+    { title: "Leather Sofa Repair", desc: "Tailor‑made designs for homes, offices & lounges.", src: `${process.env.PUBLIC_URL}/img/reclining_sofa.jpg` },
+    { title: "New Custom Bed", desc: "Tailor‑made designs for homes, offices & lounges.", src: `${process.env.PUBLIC_URL}/img/new_bed.webp` },
+
+
+
   ];
 
     
@@ -36,7 +43,7 @@ export default function Service(){
             {services.map((s) => (
               <div className="col-md-4" key={s.title}>
                 <div className="card h-100 shadow-sm">
-                <img src={s.src} alt={s.alt} style={{width:'100%',height:'250px',borderRadius:'10px'}} />
+                <img src={s.src} alt={s.alt} style={{width:'100%',height:'250px',borderRadius:'10px 10px 0 0px'}} />
 
                   <div className="card-body text-center">
 
