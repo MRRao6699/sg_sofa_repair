@@ -50,14 +50,14 @@ const Footer = () => {
             {/* Company Info */}
             <div className="col-md-4 mb-3">
               <a className="navbar-brand d-flex align-items-center" href="#">
-                        <img
-                            src= {`${process.env.PUBLIC_URL}/img/logo_sofa1.png`} // <- make sure this is in public folder
-                            alt="SG Sofa Center"
-                            height="50"
-                            className="me-2"
-                        />
-                        
-                    </a>
+                <img
+                  src={`${process.env.PUBLIC_URL}/img/logo_sofa1.png`} // <- make sure this is in public folder
+                  alt="SG Sofa Center"
+                  height="50"
+                  className="me-2"
+                />
+
+              </a>
               <p>
                 <span className='fw-bold'>Noida’s Most Trusted Sofa Repair Experts</span><br></br>
                 15 years of experience in sofa repair and reupholstery, we have become the go-to choice for countless homes and businesses across Noida.
@@ -68,7 +68,7 @@ const Footer = () => {
             <div className="col-md-2 mb-3">
               <h4>Quick Links</h4>
               <ul className="list-unstyled">
-               <li><Link to="/" className='text-white text-decoration-none'> → Home</Link></li>
+                <li><Link to="/" className='text-white text-decoration-none'> → Home</Link></li>
                 <li><Link to="/about" className='text-white text-decoration-none'>→ About</Link></li>
                 <li><Link to="/sofa_repair" className='text-white text-decoration-none'>→ Services</Link></li>
                 <li><Link to="/contact_us" className='text-white text-decoration-none'>→ Contact us</Link></li>
@@ -89,12 +89,12 @@ const Footer = () => {
             {/* Contact */}
             <div className="col-md-3">
               <h4>Contact Us</h4>
-                <a href="tel:+919742549058" className="text-white text-decoration-none ">
-                  <p>  📞 +917351139800</p>
-                </a>
+              <a href="tel:+919742549058" className="text-white text-decoration-none ">
+                <p>  📞 +917351139800</p>
+              </a>
               <a href="mailto:support@sgsofacenter.in" className="text-white text-decoration-none " >
-                  <p>  ✉ support@sgsofacenter.com</p>
-                </a>
+                <p>  ✉ support@sgsofacenter.com</p>
+              </a>
 
               <a href="https://share.google/SoKSoIMKuCDxVWWjq" className="text-white text-decoration-none " >
                 <p>📍 Gali Number 3,Sec‑ 104 Noida, India</p></a>

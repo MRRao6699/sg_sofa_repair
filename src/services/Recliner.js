@@ -4,15 +4,14 @@ import Navbar from "../navbar/Navbar";
 import Offer from "../offer/Offer";
 
 
-export default function Recliner(){
+export default function Recliner() {
 
-    return(
+    return (
         <>
-        <Navbar/>
-
-        <Offer/>
-        <Location/>
-        <Footer/>
+            <Navbar />
+            <Offer />
+            <Location />
+            <Footer />
         </>
     )
 }

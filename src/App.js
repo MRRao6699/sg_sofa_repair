@@ -11,25 +11,22 @@ import ScrollToTop from './SrrollToTop';
 
 export default function App() {
 
-  return (
+     return (
 
-     <>
- <HashRouter>
-      <ScrollToTop /> {/* ✅ Self-closing */}
-     <Routes>
-      <Route path='/' element={<Home/>}></Route>
-      <Route path='/about' element={<AboutUs/>}></Route>
-      <Route path='/sofa_repair' element={<SofaRepair/>}></Route>
-      <Route path='/recliner' element={<Recliner/>}></Route>
-      <Route path='/fabric_change' element={<FabricChange/>}></Route>
-      <Route path='/contact_us' element={<Contact/>}></Route>
-      <Route path='/work' element={<Work/>}></Route>
+          <>
+               <HashRouter>
+                    <ScrollToTop /> {/* ✅ Self-closing */}
+                    <Routes>
+                         <Route path='/' element={<Home />}></Route>
+                         <Route path='/about' element={<AboutUs />}></Route>
+                         <Route path='/sofa_repair' element={<SofaRepair />}></Route>
+                         <Route path='/recliner' element={<Recliner />}></Route>
+                         <Route path='/fabric_change' element={<FabricChange />}></Route>
+                         <Route path='/contact_us' element={<Contact />}></Route>
+                         <Route path='/work' element={<Work />}></Route>
+                    </Routes>
+               </HashRouter>
+          </>
 
-
-
-     </Routes>
-</HashRouter>
-     </>
-
-  )
+     )
 }

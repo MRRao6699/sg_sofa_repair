@@ -32,6 +32,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -40,19 +41,22 @@
 
 
 .review-card {
-  width: 320px;      /* Fixed width */
-  height: 280px;     /* Fixed height */
+  width: 320px;
+  /* Fixed width */
+  height: 280px;
+  /* Fixed height */
 }
 
 .card {
   border-radius: 15px;
   background-color: #f8f9fa;
 }
+
 .hover-card {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
 

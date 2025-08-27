@@ -5,15 +5,15 @@ import Navbar from "../navbar/Navbar";
 import Offer from "../offer/Offer";
 
 
-export default function Contact(){
-const PHONE = "+917351139800";
-    const WHATSAPP = "917351139800";
-    return(
-        <>
-        <Navbar/>
-        <Carousel_2/>
-        <Offer/>
-        {/* Contact */}
+export default function Contact() {
+  const PHONE = "+917351139800";
+  const WHATSAPP = "917351139800";
+  return (
+    <>
+      <Navbar />
+      <Carousel_2 />
+      <Offer />
+      {/* Contact */}
       <section id="contact" className="bg-dark text-light py-5">
         <div className="container">
           <div className="row g-4">
@@ -28,7 +28,7 @@ const PHONE = "+917351139800";
               </ul>
             </div>
             <div className="col-md-6">
-              <form onSubmit={(e)=>{e.preventDefault(); alert("Thanks! We'll get back to you shortly.");}} className="bg-white text-dark p-4 rounded shadow">
+              <form onSubmit={(e) => { e.preventDefault(); alert("Thanks! We'll get back to you shortly."); }} className="bg-white text-dark p-4 rounded shadow">
                 <div className="mb-3">
                   <label className="form-label">Full Name</label>
                   <input required className="form-control" placeholder="Your name" />
@@ -52,8 +52,8 @@ const PHONE = "+917351139800";
           </div>
         </div>
       </section>
-      <Location/>
-      <Footer/>
-        </>
-    )
+      <Location />
+      <Footer />
+    </>
+  )
 }

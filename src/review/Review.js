@@ -96,11 +96,11 @@ export default function Review() {
               ))}
             </Swiper>
           )}
-           {/* Buttons at the bottom center */}
-  <div className="d-flex justify-content-center mt-3">
-    <button ref={prevRef} className="btn btn-outline-secondary me-2">‹ Prev</button>
-    <button ref={nextRef} className="btn btn-outline-primary">Next ›</button>
-  </div>
+          {/* Buttons at the bottom center */}
+          <div className="d-flex justify-content-center mt-3">
+            <button ref={prevRef} className="btn btn-outline-secondary me-2">‹ Prev</button>
+            <button ref={nextRef} className="btn btn-outline-primary">Next ›</button>
+          </div>
         </div>
       </div>
     </div>

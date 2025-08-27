@@ -19,7 +19,7 @@ export default function Gallery() {
     { src: `${process.env.PUBLIC_URL}/img/sofa12.jpg`, alt: 'Not Found' },
   ];
 
- const handleImageClick = (index) => {
+  const handleImageClick = (index) => {
     setZoomedIndex(zoomedIndex === index ? null : index);
   };
 
@@ -53,9 +53,9 @@ export default function Gallery() {
                   onClick={() => handleImageClick(index)}
                   className={`gallery-img ${zoomedIndex === index ? "zoomed" : ""}`}
                 />
-                 <div className="overlay-icon">
-                    {zoomedIndex === index ? "−" : "+"}
-                  </div>
+                <div className="overlay-icon">
+                  {zoomedIndex === index ? "−" : "+"}
+                </div>
               </div>
             </div>
           ))}

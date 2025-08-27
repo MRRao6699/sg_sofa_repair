@@ -232,7 +232,7 @@ export default function Home() {
       </section>
 
       {/* <Contact/> */}
-      <Location/>
+      <Location />
       <Footer />
     </div>
 

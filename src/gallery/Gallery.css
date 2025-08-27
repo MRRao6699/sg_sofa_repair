@@ -13,11 +13,12 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.gallery-img.zoomed   {
+.gallery-img.zoomed {
   transform: scale(3);
   z-index: 10;
   position: relative;
 }
+
 .overlay-icon {
   position: absolute;
   top: 50%;
@@ -34,7 +35,6 @@
 
 .card:hover .overlay-icon {
   opacity: 1;
-    z-index: 10;
+  z-index: 10;
 
 }
-

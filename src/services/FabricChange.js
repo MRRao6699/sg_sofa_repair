@@ -5,17 +5,15 @@ import Offer from "../offer/Offer";
 import Review from "../review/Review";
 
 
-export default function FabricChange(){
+export default function FabricChange() {
 
-    return(
+    return (
         <>
-        <Navbar/>
-
-
-        <Review/>
-        <Offer/>
-        <Location/>
-        <Footer/>
+            <Navbar />
+            <Review />
+            <Offer />
+            <Location />
+            <Footer />
         </>
     )
 }

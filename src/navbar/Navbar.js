@@ -5,22 +5,22 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
 
-   
+
     const [showPopup, setShowPopup] = useState(false);
 
 
-      const [isSticky, setIsSticky] = useState(false);
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      // Adjust this value based on your topbar height
-      setIsSticky(scrollTop > 80); 
-    };
+    const [isSticky, setIsSticky] = useState(false);
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.scrollY;
+            // Adjust this value based on your topbar height
+            setIsSticky(scrollTop > 80);
+        };
 
-    window.addEventListener('scroll', handleScroll);
+        window.addEventListener('scroll', handleScroll);
 
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
 
 
@@ -46,41 +46,40 @@ export default function Navbar() {
         <>
 
 
-  {/* <!-- Topbar Start --> */}
+            {/* <!-- Topbar Start --> */}
             <div className="container-fluid bg-dark px-5 d-lg-block">
                 <div className="row gx-0 align-items-center" style={{ height: '45px' }}>
                     <div className="col-lg-8 text-center text-lg-start mb-lg-0">
-                        <div className="d-flex flex-wrap" style={{fontFamily:'auto'}}>
-                        <a href="tel:+919742549058" className="text-white text-decoration-none ">
-                    📞 +917351139800
-                </a>
-                <a href="mailto:support@sgsofacenter.in" className="text-white text-decoration-none " style={{marginLeft:'10px'}}>
-                    ✉ support@sgsofacenter.com
-                </a>
-                            
+                        <div className="d-flex flex-wrap" style={{ fontFamily: 'auto' }}>
+                            <a href="tel:+919742549058" className="text-white text-decoration-none ">
+                                📞 +917351139800
+                            </a>
+                            <a href="mailto:support@sgsofacenter.in" className="text-white text-decoration-none " style={{ marginLeft: '10px' }}>
+                                ✉ support@sgsofacenter.com
+                            </a>
+
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
             {/* <!-- Topbar End --> */}
 
 
             {/* 🔘 Main Navbar */}
-            
-                <nav className={`navbar navbar-expand-lg navbar-light bg-white shadow-sm  fixed-top px-4 px-lg-5 py-3 py-lg-0  ${
-          isSticky ? 'sticky-navbar shadow' : ''
-        }`} style={{marginTop: isSticky ? '0' : '45px' }}>
+
+            <nav className={`navbar navbar-expand-lg navbar-light bg-white shadow-sm  fixed-top px-4 px-lg-5 py-3 py-lg-0  ${isSticky ? 'sticky-navbar shadow' : ''
+                }`} style={{ marginTop: isSticky ? '0' : '45px' }}>
                 <div className="container">
                     {/* 🪑 Logo */}
                     <a className="navbar-brand d-flex align-items-center" href="#">
                         <img
-                            src= {`${process.env.PUBLIC_URL}/img/logo_sofa.png`} // <- make sure this is in public folder
+                            src={`${process.env.PUBLIC_URL}/img/logo_sofa.png`} // <- make sure this is in public folder
                             alt="SG Sofa Center"
                             height="50"
                             className="me-2"
                         />
-                        
+
                     </a>
 
                     {/* ☰ Toggler */}
@@ -177,7 +176,7 @@ export default function Navbar() {
             {/* Call Icon (bottom-right, always visible) */}
             <button
                 onClick={callPhone}
-                className="position-fixed bg-primary text-white d-flex justify-content-center align-items-center rounded-circle border-0"
+                className="pulse-animation position-fixed bg-primary text-white d-flex justify-content-center align-items-center rounded-circle border-0"
                 style={{
                     bottom: "20px",
                     right: "20px",
@@ -190,10 +189,10 @@ export default function Navbar() {
                 aria-label="Call Us"
                 title="Call Us"
             >
-                📞
+<span className="rotate-phone">📞</span>
             </button>
 
-           
+
 
         </>
 

@@ -5,7 +5,7 @@ import './Carousel.css'; // Import the custom styles
 import { Link } from 'react-router-dom';
 
 const Carousel_1 = () => {
-        const PHONE = "+917351139800";
+  const PHONE = "+917351139800";
   return (
     <Carousel fade interval={3000} className="custom-carousel">
       <Carousel.Item>
