@@ -1,4 +1,5 @@
 import Footer from "../footer/Footer";
+import Location from "../location/Location";
 import Navbar from "../navbar/Navbar";
 import Offer from "../offer/Offer";
 
@@ -33,8 +34,9 @@ export default function SofaRepair(){
         </div>
       </div>
     </div>
-
+    
        <Offer/>
+       <Location/>
         <Footer/>
         </>
     )

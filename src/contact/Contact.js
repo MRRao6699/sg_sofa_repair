@@ -1,5 +1,6 @@
 import Carousel_2 from "../carousel/Carousel_2";
 import Footer from "../footer/Footer";
+import Location from "../location/Location";
 import Navbar from "../navbar/Navbar";
 import Offer from "../offer/Offer";
 
@@ -51,6 +52,7 @@ const PHONE = "+917351139800";
           </div>
         </div>
       </section>
+      <Location/>
       <Footer/>
         </>
     )

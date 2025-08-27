@@ -13,6 +13,7 @@ import Carousel_1 from "../carousel/Carousel_1";
 import './Home.css'
 import { Link } from "react-router-dom";
 import Gallery from "../gallery/Gallery";
+import Location from "../location/Location";
 
 
 export default function Home() {
@@ -231,6 +232,7 @@ export default function Home() {
       </section>
 
       {/* <Contact/> */}
+      <Location/>
       <Footer />
     </div>
 

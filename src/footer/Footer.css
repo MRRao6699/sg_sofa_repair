@@ -41,3 +41,16 @@
 .footer-bottom {
   background-color: #0a0a0a;
 }
+
+h4{
+ font-family: 'Playfair Display', serif;
+ font-weight: bold;
+}
+
+.footer-content ul li:hover{
+ color: red;
+ cursor: pointer;
+}
+ .text-white .text-decoration-none:hover{
+  color: red !important;
+ }

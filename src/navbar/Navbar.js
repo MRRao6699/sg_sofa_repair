@@ -8,6 +8,22 @@ export default function Navbar() {
    
     const [showPopup, setShowPopup] = useState(false);
 
+
+      const [isSticky, setIsSticky] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      // Adjust this value based on your topbar height
+      setIsSticky(scrollTop > 80); 
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+
+
     // Auto-show on load after delay (optional)
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -39,7 +55,7 @@ export default function Navbar() {
                     📞 +917351139800
                 </a>
                 <a href="mailto:support@sgsofacenter.in" className="text-white text-decoration-none " style={{marginLeft:'10px'}}>
-                    ✉ support@sgsofacenter.in
+                    ✉ support@sgsofacenter.com
                 </a>
                             
                         </div>
@@ -51,7 +67,10 @@ export default function Navbar() {
 
 
             {/* 🔘 Main Navbar */}
-            <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            
+                <nav className={`navbar navbar-expand-lg navbar-light bg-white shadow-sm  fixed-top px-4 px-lg-5 py-3 py-lg-0  ${
+          isSticky ? 'sticky-navbar shadow' : ''
+        }`} style={{marginTop: isSticky ? '0' : '45px' }}>
                 <div className="container">
                     {/* 🪑 Logo */}
                     <a className="navbar-brand d-flex align-items-center" href="#">

@@ -1,4 +1,5 @@
 import Footer from "../footer/Footer";
+import Gallery from "../gallery/Gallery";
 import Navbar from "../navbar/Navbar";
 import Offer from "../offer/Offer";
 import Review from "../review/Review";
@@ -50,6 +51,7 @@ return(
           </div>
         </div>
       </section>
+      <Gallery/>
       <Review/>
       <Offer/>
       <Footer/>

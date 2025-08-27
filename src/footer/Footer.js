@@ -48,7 +48,7 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             {/* Company Info */}
-            <div className="col-md-4">
+            <div className="col-md-4 mb-3">
               <a className="navbar-brand d-flex align-items-center" href="#">
                         <img
                             src= {`${process.env.PUBLIC_URL}/img/logo_sofa1.png`} // <- make sure this is in public folder
@@ -65,41 +65,46 @@ const Footer = () => {
             </div>
 
             {/* Navigation */}
-            <div className="col-md-2">
-              <h6>Navigation</h6>
+            <div className="col-md-2 mb-3">
+              <h4>Quick Links</h4>
               <ul className="list-unstyled">
-               <li><Link to="/" className='text-white text-decoration-none'> › Home</Link></li>
-                <li><Link to="/about" className='text-white text-decoration-none'>› About</Link></li>
-                <li><Link to="/sofa_repair" className='text-white text-decoration-none'>› Services</Link></li>
-                <li><Link to="/contact_us" className='text-white text-decoration-none'>› Contact us</Link></li>
+               <li><Link to="/" className='text-white text-decoration-none'> → Home</Link></li>
+                <li><Link to="/about" className='text-white text-decoration-none'>→ About</Link></li>
+                <li><Link to="/sofa_repair" className='text-white text-decoration-none'>→ Services</Link></li>
+                <li><Link to="/contact_us" className='text-white text-decoration-none'>→ Contact us</Link></li>
               </ul>
             </div>
 
             {/* Services */}
-            <div className="col-md-3">
-              <h6>Our Services</h6>
+            <div className="col-md-3 mb-3">
+              <h4>Our Services</h4>
               <ul className="list-unstyled">
-                <li>› Custom Sofa Manufacturing</li>
-                <li>› Sofa Repair & Reupholstery</li>
-                <li>› At-Home Fabric & Design Selection</li>
-                <li>› Luxury Sofa Sets</li>
+                <li>→ Custom Sofa Manufacturing</li>
+                <li>→ Sofa Repair & Reupholstery</li>
+                <li>→ At-Home Fabric Selection</li>
+                <li>→ Luxury Sofa Sets</li>
               </ul>
             </div>
 
             {/* Contact */}
             <div className="col-md-3">
-              <h6>Contact Us</h6>
-              <p>📞 +917351139800</p>
-              <p>📧 support@sgsofacenter.com</p>
+              <h4>Contact Us</h4>
+                <a href="tel:+919742549058" className="text-white text-decoration-none ">
+                  <p>  📞 +917351139800</p>
+                </a>
+              <a href="mailto:support@sgsofacenter.in" className="text-white text-decoration-none " >
+                  <p>  ✉ support@sgsofacenter.com</p>
+                </a>
 
-              <p>📍 Noida, India</p>
+              <a href="https://share.google/SoKSoIMKuCDxVWWjq" className="text-white text-decoration-none " >
+                <p>📍 Gali Number 3,Sec‑ 104 Noida, India</p></a>
             </div>
           </div>
         </div>
       </div>
 
       <div className="footer-bottom text-center text-white py-3">
-        <small>Copyright © 2025 Musa Rao All rights reserved.</small>
+        <small>Copyright © 2025 SG Sofa Center. All rights reserved.</small>
       </div>
     </footer>
   );

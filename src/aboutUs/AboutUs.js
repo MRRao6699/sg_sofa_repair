@@ -1,4 +1,5 @@
 import Footer from "../footer/Footer";
+import Location from "../location/Location";
 import Navbar from "../navbar/Navbar";
 import Offer from "../offer/Offer";
 import Work from "../works/Work";
@@ -90,6 +91,7 @@ export default function AboutUs(){
       </div>
     </div>
     <Offer/>
+    <Location/>
     <Footer/>
         </>
     )
