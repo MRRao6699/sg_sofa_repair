@@ -79,6 +79,19 @@
   transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
+.repair-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.before,
+.after {
+  flex: 1;
+  text-align: center;
+}
+
+
 /* On hover: slide up and fade in */
 .hover-card:hover img {
   transform: scale(1.05);

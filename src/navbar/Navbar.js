@@ -34,7 +34,7 @@ export default function Navbar() {
             <div className="container-fluid bg-dark px-5 d-lg-block">
                 <div className="row gx-0 align-items-center" style={{ height: '45px' }}>
                     <div className="col-lg-8 text-center text-lg-start mb-lg-0">
-                        <div className="d-flex flex-wrap">
+                        <div className="d-flex flex-wrap" style={{fontFamily:'auto'}}>
                         <a href="tel:+919742549058" className="text-white text-decoration-none ">
                     📞 +917351139800
                 </a>

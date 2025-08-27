@@ -89,7 +89,7 @@ const Footer = () => {
             {/* Contact */}
             <div className="col-md-3">
               <h6>Contact Us</h6>
-              <p></p>
+              <p>📞 +917351139800</p>
               <p>📧 support@sgsofacenter.com</p>
 
               <p>📍 Noida, India</p>
